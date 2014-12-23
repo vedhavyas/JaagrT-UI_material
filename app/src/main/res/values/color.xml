@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="teal_500">#009688</color>
+    <color name="teal_a200">#64FFDA</color>
+    <color name="shadow">#42000000</color>
+    <color name="teal_400">#26A69A</color>
+</resources>
