@@ -7,23 +7,15 @@ import android.view.View;
 import android.widget.Button;
 
 
-public class Login extends Activity {
+public class Signup extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_signup);
+
         Button signUpBtn = (Button) findViewById(R.id.signUpBtn);
         signUpBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getBaseContext(), Signup.class);
-                startActivity(intent);
-            }
-        });
-
-        Button loginBtn = (Button) findViewById(R.id.loginBtn);
-        loginBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getBaseContext(), AdditionInfo.class);
@@ -31,4 +23,5 @@ public class Login extends Activity {
             }
         });
     }
+
 }

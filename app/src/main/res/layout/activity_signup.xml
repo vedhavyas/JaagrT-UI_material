@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background_material_light"
-    android:orientation="vertical">
+    tools:context="org.jaagrt_ui.Signup">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -21,7 +21,7 @@
             android:background="@drawable/facebook_btn"
             android:paddingEnd="30dp"
             android:paddingStart="50dp"
-            android:text="Login with Facebook" />
+            android:text="Signup with Facebook" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -29,7 +29,7 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginBottom="20sp"
             android:layout_marginTop="20sp"
-            android:text="Or Login using Email"
+            android:text="Or Signup using Email"
             android:textColor="@android:color/black"
             android:textSize="14sp" />
 
@@ -54,6 +54,8 @@
             android:textCursorDrawable="@drawable/edit_text_cursor"
             app:baseColor="@android:color/black"
             app:floatingLabel="highlight"
+            app:helperText="@string/hello_world"
+            app:helperTextColor="@android:color/black"
             app:minCharacters="1"
             app:primaryColor="@color/teal_400" />
 
@@ -64,17 +66,17 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/signUpBtn"
+                android:id="@+id/loginBtn"
                 style="@style/Button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_weight="1"
                 android:background="@drawable/button"
-                android:text="Signup" />
+                android:text="Login" />
 
             <Button
-                android:id="@+id/loginBtn"
+                android:id="@+id/signUpBtn"
                 style="@style/Button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -85,20 +87,6 @@
 
         </LinearLayout>
 
-        <Button
-            android:id="@+id/forgotPasswordBtn"
-            style="@style/Button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="20dp"
-            android:background="@null"
-            android:text="@string/forgot_password"
-            android:textColor="@drawable/color_selector"
-            android:textSize="14sp" />
-
-
     </LinearLayout>
-
 
 </RelativeLayout>

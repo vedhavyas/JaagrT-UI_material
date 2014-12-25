@@ -1,0 +1,120 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_material_light"
+    tools:context="org.jaagrt_ui.VerifyPhone">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editBoxLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:text="Verify Phone"
+        android:textAllCaps="true"
+        android:textColor="@color/teal_500"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:id="@+id/editBoxLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/phoneBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Phone Number"
+                android:inputType="phone"
+                android:textCursorDrawable="@drawable/edit_text_cursor"
+                app:baseColor="@android:color/black"
+                app:floatingLabel="highlight"
+                app:minCharacters="3"
+                app:primaryColor="@color/teal_400" />
+
+            <ImageButton
+                android:id="@+id/editPhoneBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="30dp"
+                android:background="@null"
+                android:src="@drawable/edit_btn" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/sendSMSBtn"
+            style="@style/Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/button"
+            android:text="Send Verification Code" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/verificationCodeBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:hint="Verification Code"
+            android:inputType="phone"
+            android:textCursorDrawable="@drawable/edit_text_cursor"
+            app:baseColor="@android:color/black"
+            app:floatingLabel="highlight"
+            app:minCharacters="3"
+            app:primaryColor="@color/teal_400" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <View style="@style/HorizontalDivider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/skipBtn"
+                style="@style/Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:text="Not Now"
+                android:textColor="@drawable/color_selector" />
+
+            <View style="@style/VerticalDivider" />
+
+            <Button
+                android:id="@+id/nextBtn"
+                style="@style/Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:text="Verify"
+                android:textColor="@drawable/color_selector" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
