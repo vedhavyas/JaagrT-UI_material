@@ -54,8 +54,6 @@
             android:textCursorDrawable="@drawable/edit_text_cursor"
             app:baseColor="@android:color/black"
             app:floatingLabel="highlight"
-            app:helperText="@string/hello_world"
-            app:helperTextColor="@android:color/black"
             app:minCharacters="1"
             app:primaryColor="@color/teal_400" />
 
